@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 1994-2022 OpenTV, Inc. and Nagravision S.A.
+ * Copyright (C) 1994-2023 OpenTV, Inc. and Nagravision S.A.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -11,7 +11,6 @@
 
 #include "ReactSkia/utils/RnsUtils.h"
 
-using namespace std;
 
 namespace facebook {
 namespace xplat {
@@ -23,15 +22,6 @@ class RNDeviceInfoModule : public module::CxxModule {
   virtual auto getMethods() -> std::vector<Method>;
   std::string getName();
 };
-
-#ifdef __cplusplus
-extern "C" {
-#endif
-RNS_EXPORT_MODULE(RNDeviceInfoModule)
-#ifdef __cplusplus
-}
-#endif
-
 
 } // namespace xplat
 } // namespace facebook
