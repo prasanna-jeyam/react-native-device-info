@@ -41,9 +41,8 @@ auto RNDeviceInfoModule::getMethods() -> std::vector<Method> {
   return {
     Method(
         "isEmulator",
-        [this] (dynamic args, Callback resolveCb , Callback rejectCb) {
+        [] (dynamic args, Callback resolveCb , Callback rejectCb) {
           RNS_LOG_NOT_IMPL;
-          RNS_UNUSED(this);
           dynamic result = false;
           resolveCb({result});
           return;
@@ -56,9 +55,8 @@ auto RNDeviceInfoModule::getMethods() -> std::vector<Method> {
         },SyncTag),
     Method(
         "getFontScale",
-        [this] (dynamic args, Callback resolveCb, Callback rejectCb) {
+        [] (dynamic args, Callback resolveCb, Callback rejectCb) {
           RNS_LOG_NOT_IMPL;
-          RNS_UNUSED(this);
           dynamic result = 1.0;
           resolveCb({result});
           return;
@@ -71,9 +69,8 @@ auto RNDeviceInfoModule::getMethods() -> std::vector<Method> {
         },SyncTag),
     Method(
         "isPinOrFingerprintSet",
-        [this] (dynamic args, Callback resolveCb, Callback rejectCb) {
+        [] (dynamic args, Callback resolveCb, Callback rejectCb) {
           RNS_LOG_NOT_IMPL;
-          RNS_UNUSED(this);
           dynamic result = false;
           resolveCb({result});
           return;
@@ -86,9 +83,8 @@ auto RNDeviceInfoModule::getMethods() -> std::vector<Method> {
         },SyncTag),
     Method(
         "getCarrier",
-        [this] (dynamic args, Callback resolveCb, Callback rejectCbr) {
+        [] (dynamic args, Callback resolveCb, Callback rejectCbr) {
           RNS_LOG_NOT_IMPL;
-          RNS_UNUSED(this);
           dynamic result = "Nagra";
           resolveCb({result});
           return ;
@@ -101,9 +97,8 @@ auto RNDeviceInfoModule::getMethods() -> std::vector<Method> {
         },SyncTag),
     Method(
         "getTotalDiskCapacity",
-        [this] (dynamic args, Callback resolveCb, Callback rejectCb) {
+        [] (dynamic args, Callback resolveCb, Callback rejectCb) {
           RNS_LOG_NOT_IMPL;
-          RNS_UNUSED(this);
           dynamic result = 536870912000;
           resolveCb({result});
           return;
@@ -116,9 +111,8 @@ auto RNDeviceInfoModule::getMethods() -> std::vector<Method> {
         },SyncTag),
     Method(
         "getFreeDiskStorage",
-        [this] (dynamic args, Callback resolveCb, Callback rejectCb){
+        [] (dynamic args, Callback resolveCb, Callback rejectCb){
           RNS_LOG_NOT_IMPL;
-          RNS_UNUSED(this);
           dynamic result = 53687091;
           resolveCb({result});
           return ;
@@ -131,9 +125,8 @@ auto RNDeviceInfoModule::getMethods() -> std::vector<Method> {
         },SyncTag),
     Method(
         "getBuildId",
-        [this] (dynamic args, Callback resolveCb, Callback rejectCb) {
+        [] (dynamic args, Callback resolveCb, Callback rejectCb) {
           RNS_LOG_NOT_IMPL;
-          RNS_UNUSED(this);
           dynamic result = "BUILD5.3";
           resolveCb({result});
           return;
@@ -146,9 +139,8 @@ auto RNDeviceInfoModule::getMethods() -> std::vector<Method> {
         },SyncTag),
     Method(
         "getUniqueId",
-        [this] (dynamic args, Callback resolveCb, Callback rejectCb) {
+        [] (dynamic args, Callback resolveCb, Callback rejectCb) {
           RNS_LOG_NOT_IMPL;
-          RNS_UNUSED(this);
           dynamic result = "Nagra_UNIQUEID";
           resolveCb({result});
           return;
@@ -161,9 +153,8 @@ auto RNDeviceInfoModule::getMethods() -> std::vector<Method> {
         },SyncTag),
     Method(
         "getTotalMemory",
-        [this] (dynamic args, Callback resolveCb, Callback rejectCb) {
+        [] (dynamic args, Callback resolveCb, Callback rejectCb) {
           RNS_LOG_NOT_IMPL;
-          RNS_UNUSED(this);
           dynamic result = 33384587264;
           resolveCb({result});
           return;
@@ -176,9 +167,8 @@ auto RNDeviceInfoModule::getMethods() -> std::vector<Method> {
         },SyncTag),
     Method(
         "getSupportedAbis",
-        [this] (dynamic args, Callback resolveCb, Callback rejectCb) {
+        [] (dynamic args, Callback resolveCb, Callback rejectCb) {
           RNS_LOG_NOT_IMPL;
-          RNS_UNUSED(this);
           dynamic result = {};
           resolveCb({result});
           return;
@@ -191,9 +181,8 @@ auto RNDeviceInfoModule::getMethods() -> std::vector<Method> {
         },SyncTag),
     Method(
         "getIpAddress",
-        [this] (dynamic args, Callback resolveCb, Callback rejectCb) {
+        [] (dynamic args, Callback resolveCb, Callback rejectCb) {
           RNS_LOG_NOT_IMPL;
-          RNS_UNUSED(this);
           dynamic result = "192.168.2.1";
           resolveCb({result});
           return;
@@ -206,25 +195,22 @@ auto RNDeviceInfoModule::getMethods() -> std::vector<Method> {
         },SyncTag),
     Method(
         "getPowerState",
-        [this] (dynamic args, Callback resolveCb, Callback rejectCb) {
+        [] (dynamic args, Callback resolveCb, Callback rejectCb) {
           RNS_LOG_NOT_IMPL;
-          RNS_UNUSED(this);
           dynamic result = {};
           resolveCb({result});
           return;
         }),
     Method(
         "getPowerStateSync",
-        [this] (dynamic args) -> dynamic {
+        [] (dynamic args) -> dynamic {
           RNS_LOG_NOT_IMPL;
-          RNS_UNUSED(this);
           return {};
         },SyncTag),
     Method(
         "getBatteryLevel",
-        [this] (dynamic args, Callback resolveCb, Callback rejectCb) {
+        [] (dynamic args, Callback resolveCb, Callback rejectCb) {
           RNS_LOG_NOT_IMPL;
-          RNS_UNUSED(this);
           dynamic result = 100.0;
           resolveCb({result});
           return;
@@ -237,9 +223,8 @@ auto RNDeviceInfoModule::getMethods() -> std::vector<Method> {
         },SyncTag),
     Method(
         "isBatteryCharging",
-        [this] (dynamic args, Callback resolveCb, Callback rejectCb) {
+        [] (dynamic args, Callback resolveCb, Callback rejectCb) {
           RNS_LOG_NOT_IMPL;
-          RNS_UNUSED(this);
           dynamic result = false;
           resolveCb({result});
           return;
@@ -252,9 +237,8 @@ auto RNDeviceInfoModule::getMethods() -> std::vector<Method> {
         },SyncTag),
     Method(
         "isLocationEnabled",
-        [this] (dynamic args, Callback resolveCb, Callback rejectCb) {
+        [] (dynamic args, Callback resolveCb, Callback rejectCb) {
           RNS_LOG_NOT_IMPL;
-          RNS_UNUSED(this);
           dynamic result = false;
           resolveCb({result});
           return;
@@ -267,9 +251,8 @@ auto RNDeviceInfoModule::getMethods() -> std::vector<Method> {
         },SyncTag),
     Method(
         "isHeadphonesConnected",
-        [this] (dynamic args, Callback resolveCb, Callback rejectCb) {
+        [] (dynamic args, Callback resolveCb, Callback rejectCb) {
           RNS_LOG_NOT_IMPL;
-          RNS_UNUSED(this);
           dynamic result = false;
           resolveCb({result});
           return;
@@ -282,9 +265,8 @@ auto RNDeviceInfoModule::getMethods() -> std::vector<Method> {
         },SyncTag),
     Method(
         "getUsedMemory",
-        [this] (dynamic args, Callback resolveCb, Callback rejectCb) {
+        [] (dynamic args, Callback resolveCb, Callback rejectCb) {
           RNS_LOG_NOT_IMPL;
-          RNS_UNUSED(this);
           dynamic result = 5186736128;
           resolveCb({result});
           return;
@@ -297,9 +279,8 @@ auto RNDeviceInfoModule::getMethods() -> std::vector<Method> {
         },SyncTag),
     Method(
         "getUserAgent",
-        [this] (dynamic args, Callback resolveCb, Callback rejectCb) {
+        [] (dynamic args, Callback resolveCb, Callback rejectCb) {
           RNS_LOG_NOT_IMPL;
-          RNS_UNUSED(this);
           dynamic result = "Chromium,5.3";
           resolveCb({result});
           return;
@@ -312,9 +293,8 @@ auto RNDeviceInfoModule::getMethods() -> std::vector<Method> {
         },SyncTag),
     Method(
         "getAvailableLocationProviders",
-        [this] (dynamic args, Callback resolveCb, Callback rejectCb) {
+        [] (dynamic args, Callback resolveCb, Callback rejectCb) {
           RNS_LOG_NOT_IMPL;
-          RNS_UNUSED(this);
           dynamic result = {};
           resolveCb({result});
           return;
@@ -327,9 +307,8 @@ auto RNDeviceInfoModule::getMethods() -> std::vector<Method> {
         },SyncTag),
     Method(
         "getInstallerPackageName",
-        [this] (dynamic args, Callback resolveCb, Callback rejectCb) {
+        [] (dynamic args, Callback resolveCb, Callback rejectCb) {
          RNS_LOG_NOT_IMPL;
-         RNS_UNUSED(this);
          dynamic result = "apt";
          resolveCb({result});
          return;
@@ -342,9 +321,8 @@ auto RNDeviceInfoModule::getMethods() -> std::vector<Method> {
         },SyncTag),
     Method(
         "getFirstInstallTime",
-        [this] (dynamic args, Callback resolveCb, Callback rejectCb) {
+        [] (dynamic args, Callback resolveCb, Callback rejectCb) {
           RNS_LOG_NOT_IMPL;
-          RNS_UNUSED(this);
           dynamic result = 1.0;
           resolveCb({result});                                                                                                                                                                                                                                                                        
           return;
@@ -361,7 +339,7 @@ auto RNDeviceInfoModule::getMethods() -> std::vector<Method> {
 #ifdef __cplusplus
 extern "C" {
 #endif
-RNS_EXPORT_MODULE(RNDeviceInfoModule)
+RNS_EXPORT_MODULE(RNDeviceInfo)
 #ifdef __cplusplus
 }
 #endif
