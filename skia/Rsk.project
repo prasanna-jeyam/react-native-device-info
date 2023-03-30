@@ -1,0 +1,11 @@
+{
+  "codegenConfig": {
+    "name": "rndeviceinfomodule",
+    "type": "modules",
+    "skia": {
+      "TurboModuleRegistryGetEnforcingSpec" : [ 
+        "RNDeviceInfo"
+      ]   
+    }   
+  }
+}
