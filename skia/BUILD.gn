@@ -13,7 +13,7 @@ config("LibRNDeviceInfoModule_config") {
                 ]
 }
 
-rn_cxx_component("rndeviceinfomodule") {
+rn_cxx_tp_component("rndeviceinfomodule") {
 
   # RS Native module and its dependencies
   sources = [
